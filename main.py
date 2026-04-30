@@ -6,7 +6,7 @@ def run_all():
     permission_scan()
     cron_scan()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     while True:
         run_all()
         print("Running again in 60 seconds...")
