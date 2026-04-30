@@ -1,7 +1,4 @@
-from system_scan import system_info
-from suid_scan import suid_scan
-from permission_scan import permission_scan
-from cron_scan import cron_scan
+import time
 
 def run_all():
     system_info()
@@ -9,5 +6,8 @@ def run_all():
     permission_scan()
     cron_scan()
 
-if __name__ == "__main__":
-    run_all()
+if _name_ == "_main_":
+    while True:
+        run_all()
+        print("Running again in 60 seconds...")
+        time.sleep(60)
